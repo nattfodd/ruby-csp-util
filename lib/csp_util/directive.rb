@@ -40,6 +40,10 @@ module CSPUtil
       { name: name, value: value }
     end
 
+    def to_s
+      [name, value.join(' ')].reject(&:empty?).join(' ')
+    end
+
     private
 
     def validate_name!(directive_name)

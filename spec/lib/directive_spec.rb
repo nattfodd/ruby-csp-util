@@ -16,6 +16,12 @@ describe CSPUtil::Directive do
         expect(directive.to_h).to eq(name: 'default-src', value: ["'self'"])
       end
     end
+
+    describe '#to_s' do
+      it 'returns policy entry' do
+        expect(directive.to_s).to eq("default-src 'self'")
+      end
+    end
   end
 
   context 'when token contains only directive name' do
