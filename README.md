@@ -1,5 +1,7 @@
 # ruby-csp-util
 
+[![Build Status](https://travis-ci.org/templarbit/ruby-csp-util.svg?branch=master)](https://travis-ci.org/templarbit/ruby-csp-util)
+
 Content-Security-Policy utils, i.e. CSP parser in compliance with the W3C 
 [CSP Level 2](https://www.w3.org/TR/CSP2/) 
 and [CSP Level 3](https://www.w3.org/TR/CSP3/) specs.
@@ -29,6 +31,11 @@ require 'csp_util'
 
 directives = CSPUtil.parse_directives("default-src 'self'; script-src 'self'; object-src 'self'; base-uri 'none'; report-uri https://logs.templarbit.com/csp/xxkey/reports")
 ```
+
+## Other languages
+
+  * [Go](https://github.com/templarbit/go-csp-util)
+  * [Javascript](https://github.com/templarbit/javascript-csp-util)
 
 ## Docs
 
