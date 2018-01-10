@@ -1,0 +1,19 @@
+language: ruby
+
+rvm:
+- 2.2.9
+- 2.3.6
+- 2.4.3
+- 2.5.0  
+
+script: bundle exec rspec
+
+deploy:
+  provider: rubygems
+  gem: csp-util
+  api_key:
+    secure: "2SRrvn+9nAB3kpRBIcgNAbLk2UHC2cmg9Q9pkDDdpA2D79Y8ywXv3KLOWYHK742z/iUF5Vlv1zFo5hXgGFQBjqZmNI/HkRiKC1OEToP4XMMz/M2J02fyYW7EH/bFTdwzcy+URWPSI3i8m9PE4Ab6gmqRaTY7MxhD1WJpvXgCGGCv3nCtix9VKoUT8fw9MgX8f5NWQBBJ2LdXI5vpnbhVaGfr+Ux4mfJBrOCL88EIfU601lBeIJ3yGXhFd6ElqCOo3fobqvB7NQ5p2HRBJ2wvASgV0b30WeV0OMgIJIDWhBoAvctsmHezmlNb0KMLTaRH6rKbTwJrenWTabV3t09VoGyaPcltyJ7A2I2qFoYF1neJok9hvAbM8LS4FXxOKq3skF8x0S1Qztvn13b/ZisF6u+YJjc27xBO4Oz3KpMa4+ETz+7wx2+0Y3VyYA8F1/UJVWSgWMUQGwJfYcwA9U1KC9l8lx0adFnM2gZOuDaXI9wrS9u+dOZO8fUCFVUi8uD1KO242jChD30AjM+M8R66pGT05a011EAW3y9dTmC/vrSDFUmoaGZumVXLxKeHAvjxZZfufui01xviOglSijME2SXUEMxICuI7S0GUQ9lza6VHabVZfRjOFEoZD792wxj8DXJ62nMH4PofD8lz+qfroIl34V/yiDswPuPY2/YTcOs="
+  on:
+    tags: true
+    repo: templarbit/ruby-csp-util
+    ruby: "2.4.3"
